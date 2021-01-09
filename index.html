@@ -1,139 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerrajeria Dominguez</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nosotros.css">
-    <link rel="stylesheet" href="prod-serv.css">
-    <link rel="stylesheet" href="media.css">
-</head>
-<body>
-    <div class="boton-menu">
-        <img src="img/botonMenu.png" class="icoMenu" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cerrajería Dominguez</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/section.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/btn-menu.css" />
+    <link rel="stylesheet" href="css/preloader.css">
+  </head>
+  <body class="hidden">
+    <div class="centrado" id="onload">
+      <div class="lds-ring">
+        <div></div><div></div><div></div><div></div>
+      </div>
     </div>
-    <div class="contenedor">
-        <nav class="menu">
-            <img src="img/logo.jpg" alt="" class="logo" id="up">
-            <ul class="menu-nav">
-                <li>
-                    <a href="index.html" class="menu-nav-items">Inicio</a>
-                </li>
-                <li>
-                    <a href="nosotros.html" class="menu-nav-items">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="productos.html" class="menu-nav-items">Productos</a>
-                </li>
-                <li>
-                    <a href="servicios.html" class="menu-nav-items">Servicios</a>
-                </li>
-            </ul>
-        </nav>
-        <hr class="separador">
-        <header class="principal">
-            <!-- <img src="img/imagen0.jpeg" alt="" class="imagen0"> -->
-            <h2 class="principal-h2">cerrajería dominguez</h2>
-            <p class="principal-p">Necesitas un duplicado de llave para tu auto, moto, departamento? Cerraste la
-                puerta de tu auto sin darte cuenta que dejaste la llave adentro? Queres entrar a tu casa pero perdiste
-                la llave? La ventana no es la solucion!! Llama a Cerrajeria Dominguez, atendemos urgencias las 24 Hs!.
-                Contamos con personal capacitado para  brindarte la mejor solucion.</p>
-            <a href="nosotros.html" class="btn">Ver Mas</a>
-        </header>
-        <div class="tarjetas">
-            <div>
-                <img src="img/imagen1.jpg" alt="" class="imagen1">
-                <h3 class="tarjetas-h3">maquinas especiales</h3>
-                <p class="tarjetas-p">Contamos con scanner de lectura de errores, maquinas automatizadas,
-                    estacion de...
-                </p>
-                <a href="productos.html" class="btn">Leer Mas</a>
-            </div>
-            <div>
-                <img src="img/imagen2.jpg" alt="" class="imagen2">
-                <h3 class="tarjetas-h3">personal capacitado</h3>
-                <p class="tarjetas-p">Nuestro personal posee los mejores conocimientos en el sector, con mas de 11
-                    años en el rubro
-                </p>
-                <a href="pers-cap.html" class="btn">Leer Mas</a>
-            </div>
-            <div>
-                <img src="img/imagen3.jpeg" alt="" class="imagen3">
-                <h3 class="tarjetas-h3">llaves en el acto</h3>
-                <p class="tarjetas-p">Realizamos copias de llaves en el momento, encuentrenos en Belgrano 2243, Coronda</p>
-                <a href="pers-cap.html" class="btn">Leer Mas</a>
-            </div>
-            <div>
-                <img src="img/imagen4.jpg" alt="" class="imagen4">
-                <h3 class="tarjetas-h3">la mejor atencion</h3>
-                <p class="tarjetas-p">En cerrajeria dominguez sera atendido siempre con la mejor predisposicion</p>
-                <a href="pers-cap.html" class="btn">Leer Mas</a>
-            </div>
+    <header class="cabecera">
+      <nav class="nav1" id="nav">
+        <div class="contenedor-nav">
+          <div class="logo">
+            <img src="img/logoC.png" alt="" />
+          </div>
+          <div class="enlaces" id="enlaces">
+            <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+            <a href="#" id="enlace-nosotros" class="btn-header">Nosotros</a>
+            <a href="#" id="enlace-productos" class="btn-header">Trabajos</a>
+            <a href="#" id="enlace-servicios" class="btn-header">Servicios</a>
+          </div>
+          <input type="checkbox" id="open">
+          <label for="open" class="lbl-menu">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+          </label>
         </div>
-        <section class="seccion">
-            <ul class="seccion-ul">
-                <h3 class="seccion-h3">algunos servicios:</h3>
-                <!-- <li class="seccion-li">
-                    reparacion y cargas de aire acondicionado automotor
-                </li> -->
-                <!-- <li class="seccion-li">
-                    lectura de codigos (pin-code)
-                </li> -->
-                <li class="seccion-li">
-                    reparacion de tableros
-                </li>
-                <!-- <li class="seccion-li">
-                    colocaciones de cerraduras y cerrojos
-                </li> -->
-                <li class="seccion-li">
-                    llaves de contacto, puertas y baúl
-                </li>
-                <li class="seccion-li">
-                    venta y reparacion de cajas fuertes
-                </li>
-                <li class="seccion-li">
-                    cierres centralizados
-                </li>
-                <li class="seccion-li">
-                    ventas de herrajes y candados
-                </li>
-                <li class="seccion-li">
-                    aperturas judiciales
-                </li>
-                <li class="seccion-li">
-                    colocacion y venta de alarmas
-                </li>
-                <!-- <li class="seccion-li">
-                    aperturas de vehiculos
-                </li> -->
-                <li class="seccion-li">
-                    llaves y telemandos codificados
-                </li>
-            </ul>
-        </section>
-        <section class="muro">
-            <img src="img/logotipo.jpg" alt="" class="imagenMuro">
-        </section>
-        <section class="social">
-            <p class="social-p">Contactanos</p>
-            <div class="link">
-                <a href="mailto:dominguezcerrajeria@gmail.com" class="icono">
-                    <img src="img/gmail.png" alt="" style="width: 40px;" class="iconoGmail">
-                </a>
-                <a href="https://www.facebook.com/cerrajeria.dominguez/" target="_blank" class="icono">
-                    <img src="img/facebook-circular-logo.png" alt="facebook.png" style="width: 40px;" class="iconoFace">
-                </a>
+      </nav>
+      <div class="textos">
+        <h1>Cerrajería Dominguez</h1>
+        <h2>Residencial - Automotor</h2>
+      </div>
+    </header>
+    <main>
+      <!-- SECCION DE EMPLEADOS -->
+      <section class="nosotros contenedor" id="nosotros">
+        <iframe
+          class="iframe"
+          src="sub-pag/nosotros.html"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </section>
+      <!-- SECCION SERVICIOS -->
+      <section class="about" id="servicios">
+        <div class="contenedor">
+          <h3>Nuestros servicios</h3>
+          <p class="p after">Brindamos los siguientes Servicios</p>
+          <div class="servicios">
+            <div class="caja-servicios">
+              <img src="img/serv/alarma.png" alt="servicios" class="imgServicio"/>
+              <h4>Colocación y Venta de Alarmas</h4>
             </div>
-        </section>
-        <a href="#up" class="arriba">
-            <img src="img/up-arrow.png" class="arriba" alt="">
-        </a>
-    </div>
-    <footer class="footer">
-        <p class="footer-p">Copyright-2020 Cerrajeria Dominguez <br><br>
-        Sitio desarrollado por Ibañez Ezequiel</p>
+            <div class="caja-servicios">
+              <img src="img/serv/candado.png" alt="servicios" class="imgServicio"/>
+              <h4>Cierres Centralizados</h4>
+            </div>
+            <div class="caja-servicios">
+              <img src="img/serv/huella.png" alt="servicios" class="imgServicio"/>
+              <h4>Lecturas de Códigos (Pin-Code)</h4>
+            </div>
+            <div class="caja-servicios">
+              <img src="img/serv/tablero.png" alt="servicios" class="imgServicio"/>
+              <h4>Reparación de Tableros</h4>
+            </div>
+            <div class="caja-servicios">
+              <img src="img/serv/llaveCodificada.png" alt="servicios" class="imgServicio"/>
+              <h4>Llaves y Telemandos Codificados</h4>
+            </div>
+            <div class="caja-servicios">
+              <img src="img/serv/reparacion.png" alt="servicios" class="imgServicio"/>
+              <h4>Reparación y Cargas de <br/>aire acondicionado automotor</h4>
+            </div>
+            <div class="caja-servicios">
+              <img src="img/serv/herraje.png" alt="servicios" class="imgServicio"/>
+              <h4>Venta de Herrajes y Candados</h4>
+            </div>
+            <div class="caja-servicios">
+              <img src="img/serv/telemandos.png" alt="servicios" class="imgServicio"/>
+              <h4>Reparación y Codificado de <br />Telemandos</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECCION GALERIA  -->
+      <section class="productos contenedor" id="productos">
+        <h3>Nuestros Trabajos</h3>
+        <p class="after">Contamos con último en tecnologías</p>
+        <div class="botones-productos">
+          <ul>
+            <li class="filter active" data-nombre="todos">Todos</li>
+            <li class="filter" data-nombre="produc">Productos</li>
+            <li class="filter" data-nombre="maquinas">Maquinas</li>
+            <li class="filter" data-nombre="servic">Servicios</li>
+          </ul>
+        </div>
+        <div class="galeria-productos">
+          <div class="cont-work servic">
+              <img src="img/servicios/serv (1).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work servic">
+              <img src="img/servicios/serv (2).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work servic">
+              <img src="img/servicios/serv (3).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work servic">
+              <img src="img/servicios/serv (4).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work servic">
+              <img src="img/servicios/serv (5).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work servic">
+              <img src="img/servicios/serv (6).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (1).jpeg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (1).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (2).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (3).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (4).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (5).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (6).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (7).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work produc">
+              <img src="img/productos/product (8).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (1).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (2).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (3).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (4).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (5).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (6).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (7).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (8).jpg" alt="" class="img-productos"/>
+          </div>
+          <div class="cont-work maquinas">
+              <img src="img/maquinas/maq (9).jpg" alt="" class="img-productos"/>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="contacto" id="contacto">
+      <p class="footer-p">
+        2020 - Cerrajería Dominguez<br /><br />Contacto con el Desarrollador <br>
+        Gmail: <a href="mailto:bertylaborga@gmail.com">bertylaborga@gmail.com</a>
+      </p>
+      <p></p>
+      <div class="enlaceIcon">
+        Iconos diseñados por
+        <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp"
+          >Eucalyp</a
+        >
+        from
+        <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+      </div>
     </footer>
-    <script src="main.js"></script>
-</body>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/filtro.js"></script>
+  </body>
 </html>
