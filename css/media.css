@@ -1,9 +1,24 @@
 /* para dispositivos moviles */
 @media screen and (max-width: 780px){
+    .btn-header {
+        margin-left: 5px;
+    }
+    .textos>h1 {
+        margin-top: 150px;
+    }
+    .parrafo-text {
+        font-size: 19px;
+    }
     .iframe {
-        height: 800px;
+        height: 950px;
+        margin-bottom: 0px;
+    }
+    .IcoRedes {
+        margin: 0 25px 20px;
+        
     }
 }
+
 @media screen and (max-width: 700px){
     .lbl-menu {
         display: block;
@@ -17,6 +32,10 @@
     .textos>h1 { font-size: 60px;}
 
     .textos>h2 { font-size: 25px; line-height: 70px;}
+/* 
+    .parrafo-text {
+        display: none;
+    } */
 
     .enlaces {
         position: fixed;

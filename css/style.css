@@ -22,7 +22,8 @@ body { font-family: 'open sans', Verdana, Tahoma, sans-serif;}
   /* -------- HEADER --------- */
 .cabecera {
     width: var(--anchototal);
-    height: 550px;
+    height: auto;
+    min-height: 550px;
     background: linear-gradient(to bottom,
     var(--color1),
     var(--color2),
@@ -88,9 +89,29 @@ nav {
     overflow: hidden;
     text-align: center;
 }
-.textos>h1 { font-size: 80px;}
+.textos>h1 { font-size: 80px; margin-top: 150px; text-shadow: 1px 6px 6px black;}
 
-.textos>h2 { font-size: 30px; font-weight: 300;}
+.textos>h2 { font-size: 30px; font-weight: 300; text-shadow: 1px 2px 4px black;}
+
+.parrafo-text {
+    width: 65%;
+    margin: 60px 0 0;
+    font-size: 23px;
+    text-shadow: 1px 2px 4px black;
+}
+.Redes {
+    margin-top: 40px;
+}
+.IcoRedes {
+    margin: 3px 25px;
+    width: 40px;
+    border-radius: 50%;
+}
+.IcoRedes:hover {
+    width: 45px;
+    margin: 0 22px;
+    box-shadow: 1px 2px 8px black;
+}
 
 .iframe { height: 600px; width: 100%; margin-bottom: 100px;}
 
@@ -154,6 +175,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;text-align: center;
     padding: var(--espacio-cont) 0;
 }
 .enlaceIcon { font-size: 15px; margin-top: var(--espacio);}

@@ -87,3 +87,24 @@
     line-height: 30px;
     font-weight: bold;
 }
+.mapa {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--margen);
+    flex-direction: column;
+}
+.mapa h3 {
+    color: var(--naranja);
+    font-size: var(--titulo);
+    font-weight: bold;
+}
+.mapa p{
+    font-weight: bold;
+}
+.mapa iframe{
+    width: 600px;
+    max-width: 80%;
+    height: 300px;
+}

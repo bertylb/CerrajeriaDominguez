@@ -12,11 +12,13 @@ $(function(){
     let nosotros = $('#nosotros').offset().top,
         productos = $('#productos').offset().top,
         servicios = $('#servicios').offset().top;
+        ubicacion = $('#ubicacion').offset().top;
 
     window.addEventListener('resize', function(){
         let nosotros = $('#nosotros').offset().top,
             productos = $('#productos').offset().top,
             servicios = $('#servicios').offset().top;
+            ubicacion = $('#ubicacion').offset().top;
     });
     $('#enlace-inicio').on('click', function(e){
         e.preventDefault();
@@ -40,6 +42,12 @@ $(function(){
         e.preventDefault();
         $('html, body').animate({
             scrollTop: servicios
+        },450);
+    });
+    $('#enlace-ubicacion').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: ubicacion + 150
         },450);
     });
 });
