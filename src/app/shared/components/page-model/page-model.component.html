@@ -1,0 +1,13 @@
+<div class="home_products">
+    <header class="main">
+        <h2 class="main__title"> {{ title }} </h2>
+        <p class="main__paragraph"> {{ paragraph }} </p>
+    </header>
+    <section class="box">
+        <div class="box__galery">
+            <div class="box__galery--img" *ngFor="let img of productPageImages">
+                <img class="img" src=" {{ img.url }} ">
+            </div>
+        </div>
+    </section>
+</div>

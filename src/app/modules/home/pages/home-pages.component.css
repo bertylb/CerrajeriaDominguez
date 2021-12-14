@@ -1,0 +1,183 @@
+.sticky { position: sticky; }
+.main {
+    height: 100vh;
+    padding-top: 40px;
+}
+.main__title, .main__title--span {
+    height: 100px;
+    top: 130px;
+    margin-top: 25px;
+    color: var(--titleColor);
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Aldrich', 'Orbitron', sans-serif;
+    text-shadow: 5px 8px 6px black;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 20;
+}
+/* FIRSTLETTER NO FUNCIONO PARA LA SEGUNDA PALABRA - SPAN(D) */
+.main__title::first-letter, .main__title--span {
+    font-size: 4.7rem;
+}
+.main__paragraph {
+    margin: 1em 4em;
+    padding: 1em 4.5em;
+    color: var(--paragraphColor);
+    text-align: center;
+    text-shadow: 7px 5px 5px black;
+    font-size: 1.9rem;
+    line-height: 50px;
+    top: 230px;
+}
+.section {
+    position: relative;
+    margin: -150px 0;
+    padding: 0;
+    background: var(--secondaryColor);
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    z-index: 50;
+}
+.section__reverse {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+    background: linear-gradient(to top right,rgba(255, 247, 0, 0.193),
+                                                rgba(0, 0, 0, 0.426)),
+                                                url(../../../../assets/img/imagen0.jpg) no-repeat;
+                                                background-attachment: fixed;
+    background-size: cover;
+}
+/* SECCION REDES SOCIALES */
+section:nth-of-type(3) {
+    background-color: rgb(112, 150, 162);
+}
+section:nth-of-type(3) > .box,
+section:last-of-type > .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.title__ubicacion {
+    background-color: rgb(112, 150, 162);
+}
+.map {
+    width: 80%;
+}
+section:last-of-type {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    background: linear-gradient(to top right,rgba(255, 247, 0, 0.193),
+    rgba(0, 0, 0, 0.426)),
+    url(../../../../assets/img/fondo5.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.box {
+    padding: 200px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "galeria descripcion";
+}
+.box__reverse{
+    grid-template-areas: "descripcion galeria";
+}
+.box__description {
+    text-align: center;
+    grid-area: descripcion;
+}
+.box__title {
+    color: var(--titleColor);
+    font-family: 'Aldrich', 'Orbitron', sans-serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+    top: 120px;
+    z-index: 30;
+}
+.title__productos {
+    background-color: var(--secondaryColor);
+}
+.box__paragraph {
+    padding: 10% .5rem;
+    color: var(--paragraphColor);
+    font-size: 1.9rem;
+    text-shadow: 1px 2px 10px black;
+    line-height: 40px;
+    top: 170px;
+}
+.box__galery {
+    padding-left: 10px; padding-right: 10px;
+    grid-area: galeria;
+}
+.box__galery--img {
+    width: 100%;
+    margin-top: 10px;
+    max-height: 350px;
+    border: 1px solid white;
+    top: 100px;
+    border-radius: 3px;
+}
+.box__button {
+    width: 150px;
+    height: 40px;
+    margin: 100px 30px 0 30px;
+    color: var(--paragraphColor);
+    background-color: transparent;
+    border-radius: 7px;
+    font-size: 15px;
+    top: 500px;
+    cursor: pointer;
+}
+.box__button:hover {
+    box-shadow: 0px 0px 8px rgba(255, 255, 0, 0.234);
+    color: var(--titleColor);
+}
+.box__redes{
+    width: 100%;
+    height: 200px;
+    /* margin-top: 250px; */
+    top: 250px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box__redes--icon {
+    width: 90px;
+}
+
+@media screen and (max-width:575px) {
+    .section {
+        margin-top: 100px;
+    }
+    .main__paragraph {
+        margin: 3em 0 0;
+        padding: 1em .7em;
+        top: 260px;
+    }
+    .box {
+        padding: 150px 0;
+    }
+    .box__title { font-size: 40px; }
+    .box__galery--img{
+        max-height: 150px;
+        margin: 5px 5px;
+        border-radius: 5px;
+    }
+    .box__galery {
+        padding: 0 15px;
+    }
+    .box__redes--icon{
+        width: 50px;
+    }
+    section:nth-of-type(3) > .box {
+        margin-bottom: 5rem;
+    }
+    .map {
+        width: 90%;
+    }
+}
+@media screen and (max-width:425px) {
+    .box__title{
+        font-size: 80%;
+    }
+}

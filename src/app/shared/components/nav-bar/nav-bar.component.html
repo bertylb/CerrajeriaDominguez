@@ -1,0 +1,14 @@
+<nav class="nav">
+    <div class="nav__logo">
+        <img class="nav__logo--img" src="/assets/logo/logoC.png" alt="Logo-cerrajería-dominguez">
+    </div>
+    <div class="nav__menu">
+        <ul class="nav__menu--body">
+            <li class="nav__menu--item" [routerLink]="item.route" *ngFor="let item of mainMenu"> {{ item.link | uppercase }} </li>
+             <!-- (click)="changeActive(item)" [className]=" == itemActivo ? 'active' : 'inactive'"-->
+            <div>
+                <span style="color: rgb(0, 223, 0);">Abierto</span> 
+            </div>
+        </ul>
+    </div>
+</nav>
