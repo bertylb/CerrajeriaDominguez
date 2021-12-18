@@ -1,79 +1,74 @@
-<!-- <main class="home"> -->
 
-    <header class="main">
-        <h1 class="main__title sticky">
-            <!-- SPAN D PARA AGRANDARLA -->
-            Cerrajería <span class="main__title--span">D</span>ominguez
-        </h1>
-        <p class="main__paragraph sticky">
-            En Cerrajería Dominguez te brindamos la mejor atención de la mano de maquinas de última
-            tecnología para así poder ofrecerte un mejor y exclusivo servicio. <br> Podes encontrarnos
-            en Belgrano 2341 - Coronda
-        </p>
-    </header>
-    <!--################ SECCION PRODUCTOS ################ -->
-    <section class="section sticky">
-        <article class="box">
-            <div class="box__description">
-                <h2 class="box__title title__productos sticky">Productos</h2>
-                <p class="box__paragraph sticky">Contamos con todas las máquinas para duplicados de llaves, tanto
-                    domiciliarias como vehiculares.
-                </p>
-                <button [routerLink]="['/products']" type="button" class="box__button sticky">Ver mas</button>
-            </div>
-            <div class="box__galery">
-                <img class="box__galery--img sticky" *ngFor="let img of productsImages()" src=" {{ img.url }} " alt="">
-            </div>
-        </article>
-    </section>
-    <!--################  SECCION SERVICIOS ################ -->
-    <section class="section  section__reverse sticky">
-        <article class="box box__reverse">
-            <div class="box__description">
-                <h2 class="box__title sticky">Servicios</h2>
-                <p class="box__paragraph sticky">Servicio de codificado de chip inmovilzador, tallado de llave
-                    como también generación de telemando a distancia para cierres centralizados.
-                </p>
-                <button [routerLink]="['/services']" type="button" class="box__button sticky">Ver mas</button>
-            </div>
-            <div class="box__galery">
-                <img class="box__galery--img sticky" src="../../../../assets/img/servicios/servicios-img.jpeg" alt="">
-                <img class="box__galery--img sticky" src="../../../../assets/img/servicios/servicios-img2.jpeg" alt="">
-                <img class="box__galery--img sticky" src="../../../../assets/img/servicios/servicios-img3.jpeg" alt="">
-                <img class="box__galery--img sticky" src="../../../../assets/img/servicios/servicios-img4.jpeg" alt="">
-            </div>
-        </article>
-    </section>
-    <!--################  SECCION CONTACTO ################ -->
-    <section class="section sticky">
-        <article class="box">
-            <div class="box__description">
-                <h2 class="box__title title__ubicacion sticky">Ubicación</h2>
-                <p class="box__paragraph">Nos encontramos en: <br> Belgrano 2243 Coronda - Santa Fe
-                </p>
-            </div>
-            <iframe
-                class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6768.760662637175!2d-60.92736368484473!3d-31.97770377363809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5bf8a8aeb20f9%3A0x390f5462ae13c2e8!2sCerrajeria%20Dominguez!5e0!3m2!1ses-419!2sar!4v1639193209399!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <!-- <button type="button" class="box__button sticky">Ver mas</button> -->
-        </article>
-    </section>
-    <!--################  SECCION REDES SOCIALES ################ -->
-    <section class="section section__reverse sticky">
-        <article class="box box__reverse">
-            <div class="box__description">
-                <h2 class="box__title sticky">Redes</h2>
-                <p class="box__paragraph sticky">
-                    Búscanos en nuestras redes sociales
-                </p>
-            </div>
-            <div class="box__redes sticky">
-                <i><img class="box__redes--icon" src="assets/img/icons/facebook.png" alt="facebook"></i>
-                <i><img class="box__redes--icon" src="assets/img/icons/whatsapp.png" alt="facebook"></i>
-                <i><img class="box__redes--icon" src="assets/img/icons/instagram.png" alt="facebook"></i>
-            </div>
-        </article>
-    </section>
-
-<!-- </main> -->
+<header class="main">
+    <h1 class="main__title sticky">
+        <!-- SPAN D PARA AGRANDARLA -->
+        Cerrajería <span class="main__title--span">D</span>ominguez
+    </h1>
+    <p class="main__paragraph sticky">
+        En Cerrajería Dominguez te brindamos la mejor atención de la mano de maquinas de última
+        tecnología para así poder ofrecerte un mejor y exclusivo servicio. <br> Podes encontrarnos
+        en Belgrano 2341 - Coronda
+    </p>
+</header>
+<!--################ SECCION PRODUCTOS ################ -->
+<section class="section sticky">
+    <article class="box">
+        <div class="box__description">
+            <h2 class="box__title title__productos sticky">Productos</h2>
+            <p class="box__paragraph sticky">Contamos con todas las máquinas para duplicados de llaves, tanto
+                domiciliarias como vehiculares.
+            </p>
+            <button [routerLink]="['/products']" type="button" class="box__button sticky">Ver mas</button>
+        </div>
+        <div class="box__galery">
+            <img class="box__galery--img sticky" *ngFor="let img of productsImages()" src=" {{ img.url }} " alt="">
+        </div>
+    </article>
+</section>
+<!--################  SECCION SERVICIOS ################ -->
+<section class="section  section__reverse sticky">
+    <article class="box box__reverse">
+        <div class="box__description">
+            <h2 class="box__title sticky">Servicios</h2>
+            <p class="box__paragraph sticky">Servicio de codificado de chip inmovilzador, tallado de llave
+                como también generación de telemando a distancia para cierres centralizados.
+            </p>
+            <button [routerLink]="['/services']" type="button" class="box__button sticky">Ver mas</button>
+        </div>
+        <div class="box__galery">
+            <img class="box__galery--img sticky" *ngFor="let img of serviceImages()" src=" {{ img.url }} " alt="">
+        </div>
+    </article>
+</section>
+<!--################  SECCION UBICACION ################ -->
+<section class="section sticky">
+    <article class="box">
+        <div class="box__description">
+            <h2 class="box__title title__ubicacion sticky">Ubicación</h2>
+            <p class="box__paragraph">Nos encontramos en: <br> Belgrano 2243 Coronda - Santa Fe
+            </p>
+        </div>
+        <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6768.760662637175!2d-60.92736368484473!3d-31.97770377363809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5bf8a8aeb20f9%3A0x390f5462ae13c2e8!2sCerrajeria%20Dominguez!5e0!3m2!1ses-419!2sar!4v1639193209399!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy"></iframe>
+            <!-- <button type="button" class="box__button sticky">Ver mas</button> -->
+    </article>
+</section>
+<!--################  SECCION REDES SOCIALES ################ -->
+<section class="section section__reverse sticky">
+    <article class="box box__reverse">
+        <div class="box__description">
+            <h2 class="box__title sticky">Redes</h2>
+            <p class="box__paragraph sticky">
+                Búscanos en nuestras redes sociales
+            </p>
+        </div>
+        <div class="box__redes sticky">
+            <i><img class="box__redes--icon" src="assets/img/icons/facebook.png" alt="facebook"></i>
+            <i><img class="box__redes--icon" src="assets/img/icons/whatsapp.png" alt="facebook"></i>
+            <i><img class="box__redes--icon" src="assets/img/icons/instagram.png" alt="facebook"></i>
+        </div>
+    </article>
+</section>
+<app-footer></app-footer>

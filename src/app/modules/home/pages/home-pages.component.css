@@ -4,9 +4,8 @@
     padding-top: 40px;
 }
 .main__title, .main__title--span {
-    height: 100px;
     top: 130px;
-    margin-top: 25px;
+    margin-top: 15px;
     color: var(--titleColor);
     font-size: 3.5rem;
     font-weight: bold;
@@ -21,14 +20,14 @@
     font-size: 4.7rem;
 }
 .main__paragraph {
-    margin: 1em 4em;
-    padding: 1em 4.5em;
+    margin: .5em 1em;
     color: var(--paragraphColor);
     text-align: center;
-    text-shadow: 7px 5px 5px black;
+    text-shadow: 4px 8px 6px black;
     font-size: 1.9rem;
     line-height: 50px;
     top: 230px;
+    z-index: 20;
 }
 .section {
     position: relative;
@@ -58,9 +57,6 @@ section:last-of-type > .box {
     justify-content: center;
     margin-bottom: 4rem;
 }
-.title__ubicacion {
-    background-color: rgb(112, 150, 162);
-}
 .map {
     width: 80%;
 }
@@ -71,7 +67,6 @@ section:last-of-type {
     url(../../../../assets/img/fondo5.jpg) no-repeat center;
     background-size: cover;
 }
-
 .box {
     padding: 200px 0;
     display: grid;
@@ -92,6 +87,14 @@ section:last-of-type {
     text-shadow: 2px 2px 2px black;
     top: 120px;
     z-index: 30;
+}
+.title__ubicacion {
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 150, 162);
+    height: 90px;
 }
 .title__productos {
     background-color: var(--secondaryColor);
@@ -122,13 +125,14 @@ section:last-of-type {
     margin: 100px 30px 0 30px;
     color: var(--paragraphColor);
     background-color: transparent;
+    border: solid 2px;
     border-radius: 7px;
     font-size: 15px;
     top: 500px;
     cursor: pointer;
 }
 .box__button:hover {
-    box-shadow: 0px 0px 8px rgba(255, 255, 0, 0.234);
+    box-shadow: 2px 2px 8px rgba(255, 255, 0, 0.234);
     color: var(--titleColor);
 }
 .box__redes{
@@ -144,13 +148,23 @@ section:last-of-type {
 .box__redes--icon {
     width: 90px;
 }
-
-@media screen and (max-width:575px) {
-    .section {
-        margin-top: 100px;
+.map {
+    height: 450px;
+    border: 0;
+}
+@media screen and (max-width:745px){
+    .main__title, .main__title--span {
+        margin-top: 0;
     }
     .main__paragraph {
-        margin: 3em 0 0;
+        margin: .5em 1em;
+    }
+}
+@media screen and (max-width:575px) {
+    .section {
+        margin-top: 50px;
+    }
+    .main__paragraph {
         padding: 1em .7em;
         top: 260px;
     }

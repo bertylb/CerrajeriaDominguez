@@ -11,7 +11,11 @@ const routes: Routes = [
     loadChildren:() => import(`./modules/products/products.module`).then(m => m.ProductsModule)
   },
   { path: 'services',
-    loadChildren: () => import('./modules/servicios/servicios.module').then(m => m.ServiciosModule) },
+    loadChildren: () => import('./modules/servicios/servicios.module').then(m => m.ServiciosModule)
+  },
+  { path: 'contact',
+    loadChildren: () => import('./modules/contacts/contact.module').then(m => m.ContactModule)
+  },
   {
     path: '**',
     redirectTo: ''
