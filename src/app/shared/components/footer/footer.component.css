@@ -5,10 +5,16 @@
     background-color: rgb(158, 171, 179);
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:"title title title"
-                        "links contact info";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:"title title"
+                        "contact info";
     z-index: 50;
+}
+h4 {
+    font-size: 1.2rem;
+    font-family: 'Aldrich', 'Orbitron', sans-serif;
+    font: bold;
+    text-transform: capitalize;
 }
 .footer__title {
     color: var(--paragraphColor);
@@ -27,14 +33,20 @@
     justify-content: space-around;
     align-items: center;
 }
-.footer__links {
-    grid-area: links;
-}
 .footer__contact {
     grid-area: contact;
 }
 .footer__info {
     grid-area: info;
+}
+.footer__icon {
+    width: 60px;
+}
+.footer__info-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 @media screen and (max-width:575px) {
     .footer__title {
