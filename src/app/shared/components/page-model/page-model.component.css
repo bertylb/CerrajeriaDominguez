@@ -84,3 +84,16 @@
         padding: 2rem;
     }
 }
+@media screen and (max-height:500px) and (orientation: landscape) {
+    .main {
+        padding: 25px 10px;
+    }
+    .main__title{
+        top: 85px;
+        margin-top: 0;
+    }
+    .main__paragraph {
+        margin-top: 20px;
+        top: 150px;
+    }
+}

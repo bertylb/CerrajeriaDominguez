@@ -63,3 +63,8 @@
         padding: 1.4rem 2rem;
     }
 }
+@media screen and (max-height:500px) and (orientation: landscape) {
+    .nav {
+        padding: 1rem 4rem;
+    }
+}

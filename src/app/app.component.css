@@ -39,3 +39,8 @@
         background-position: center;
     }
 }
+@media screen and (max-height:500px) and (orientation: landscape) {
+    .nav-bar__extension {
+        margin-top: 75px;
+    }
+}
