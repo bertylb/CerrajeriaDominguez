@@ -84,7 +84,8 @@ section:last-of-type {
 .box__description--title {
     color: var(--titleColor);
     font-family: 'Aldrich', 'Orbitron', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
     text-shadow: 2px 2px 2px black;
     top: 120px;
     z-index: 30;
@@ -160,6 +161,14 @@ section:last-of-type {
     line-height: 40px;
 }
 @media screen and (max-width:745px){
+    .main__title, .main__title--span {
+        margin-top: 0;
+        padding-top: 20px;
+        line-height: 60px;
+    }
+    .main__paragraph {
+        margin: .5em 1em;
+    }
     .box {
         max-height: 2200px;
         margin-bottom: -200px;
@@ -184,12 +193,6 @@ section:last-of-type {
     .box__reverse {
         margin-top: -200px;
     }
-    .main__title, .main__title--span {
-        margin-top: 0;
-    }
-    .main__paragraph {
-        margin: .5em 1em;
-    }
 }
 @media screen and (max-width:575px) {
     .section {
@@ -199,7 +202,6 @@ section:last-of-type {
         padding: 1rem .7rem;
         top: 260px;
     }
-    .box__description--title { font-size: 40px; }
     .box__galery {
         padding: 0 15px;
     }
@@ -224,13 +226,13 @@ section:last-of-type {
         height: 120vh;
     }
     .main__title, .main__title--span {
-        top: 85px;
-        margin-top: 0;
+        top: 100px;
+        margin-top: 10px;
         padding-top: 0;
     }
     .main__paragraph {
-        margin: .2rem 0;
-        top: 150px;
+        margin: .3rem 0;
+        top: 155px;
     }
     .title__ubicacion,
     .title__productos {

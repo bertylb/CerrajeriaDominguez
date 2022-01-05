@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,11 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   public mainMenu: Array<any> = [];
-  public itemActivo: boolean = false;
+
+  @ViewChild('sidenav') sidenav!: MatSidenav;
+  icon: 'menu' | 'close' = 'menu';
 
   constructor() { }
 
   ngOnInit(): void {
+    this.addLinks();
+  }
+
+  addLinks() {
     this.mainMenu = [
       {
         link: 'inicio',
@@ -32,10 +39,15 @@ export class NavBarComponent implements OnInit {
       }
     ]
   }
-
-  changeActive(item:any) {
-    this.itemActivo = !this.itemActivo;
-    console.log(this.itemActivo, "item", item );
+  // AL PRESIONAR TECLA ESC
+  close() {
+    this.sidenav.close();
   }
-
+  changeIcon() {
+    if(this.sidenav.opened) {
+      this.icon = 'close'
+    } else {
+      this.icon = 'menu'
+    }
+  }
 }

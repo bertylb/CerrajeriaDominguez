@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { PageModelComponent } from './components/page-model/page-model.component';
-
-
 @NgModule({
   declarations: [
     NavBarComponent,
@@ -15,7 +16,9 @@ import { PageModelComponent } from './components/page-model/page-model.component
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatSidenavModule,
+    MatIconModule
   ],
   exports: [
     NavBarComponent,

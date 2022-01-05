@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit,ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ProductService } from '@shared/services/products-services/product.service';
 import { ServiceService } from '@shared/services/services-service/service.service';
 
@@ -30,7 +30,6 @@ export class HomePagesComponent implements OnInit {
         this.showMap=false;
       }
     }, 2000);
-
   }
 
   productsImages() {

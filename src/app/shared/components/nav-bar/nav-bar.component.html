@@ -2,13 +2,22 @@
     <div class="nav__logo">
         <img class="nav__logo--img" src="/assets/logo/logoC.png" alt="Logo-cerrajería-dominguez">
     </div>
-    <div class="nav__menu">
+    <ng-container class="nav__menu">
         <ul class="nav__menu--body">
             <li class="nav__menu--item" [routerLink]="item.route" *ngFor="let item of mainMenu"> {{ item.link | uppercase }} </li>
-             <!-- (click)="changeActive(item)" [className]=" == itemActivo ? 'active' : 'inactive'"-->
-            <div>
-                <span style="color: rgb(0, 223, 0);">Abierto</span> 
-            </div>
         </ul>
-    </div>
+    </ng-container>
+
+    <p><button class="btn-sidevar" mat-button (click)="sidenav.toggle(); changeIcon()">
+        <mat-icon > {{ icon }} </mat-icon>
+    </button></p>
+
 </nav>
+
+<mat-sidenav-container>
+    <mat-sidenav class="example-container" #sidenav (keydown.escape)="close()">
+
+        <li (click)="sidenav.close(); changeIcon()" class="sidenav__list--item" [routerLink]="item.route" *ngFor="let item of mainMenu"> {{ item.link | uppercase }} </li>
+
+    </mat-sidenav>
+</mat-sidenav-container>

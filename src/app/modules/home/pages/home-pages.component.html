@@ -13,13 +13,13 @@
 <!--################ SECCION PRODUCTOS ################ -->
 <section class="section sticky">
     <article class="box">
-        <div class="box__description">
+        <header class="box__description">
             <h2 class="box__description--title title__productos sticky">Productos</h2>
             <p class="box__description--paragraph sticky">Contamos con todas las máquinas para duplicados de llaves, tanto
                 domiciliarias como vehiculares.
             </p>
             <button [routerLink]="['/products']" type="button" class="box__button sticky">Ver mas</button>
-        </div>
+        </header>
         <div class="box__galery">
             <img class="box__galery--img sticky" *ngFor="let img of productsImages()" src=" {{ img.url }} " alt="">
         </div>
@@ -43,11 +43,11 @@
 <!--################  SECCION UBICACION ################ -->
 <section class="section sticky">
     <article class="box">
-        <div class="box__description">
+        <header class="box__description">
             <h2 class="box__description--title title__ubicacion sticky">Ubicación</h2>
             <p class="box__description--paragraph">Nos encontramos en: <br> Belgrano 2243 Coronda - Santa Fe
             </p>
-        </div>
+        </header>
         <!--  -->
         <ng-container *ngIf="showMap; else mapLoadError;">
             <iframe
@@ -67,12 +67,12 @@
 <!--################  SECCION REDES SOCIALES ################ -->
 <section class="section section__reverse sticky">
     <article class="box box__reverse">
-        <div class="box__description">
+        <header class="box__description">
             <h2 class="box__description--title sticky">Redes</h2>
             <p class="box__description--paragraph sticky">
                 Búscanos en nuestras redes sociales
             </p>
-        </div>
+        </header>
         <div class="box__redes sticky">
             <a href="">
                 <i><img class="box__redes--icon" src="assets/img/icons/facebook.svg"alt="facebook-icono" title="facebook"></i>
