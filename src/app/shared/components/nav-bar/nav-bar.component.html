@@ -1,21 +1,28 @@
+
 <nav class="nav">
     <div class="nav__logo">
         <img class="nav__logo--img" src="/assets/logo/logoC.png" alt="Logo-cerrajería-dominguez">
     </div>
-    <ng-container class="nav__menu">
-        <ul class="nav__menu--body">
-            <li class="nav__menu--item" [routerLink]="item.route" *ngFor="let item of mainMenu"> {{ item.link | uppercase }} </li>
-        </ul>
-    </ng-container>
 
-    <p><button class="btn-sidevar" mat-button (click)="sidenav.toggle(); changeIcon()">
-        <mat-icon > {{ icon }} </mat-icon>
-    </button></p>
+    <div class="nav__menu">
+        <ng-container *ngIf="show; else btnMenu">
+            <ul class="nav__menu--body">
+                <li class="nav__menu--item" [routerLink]="item.route" *ngFor="let item of mainMenu"> {{ item.link | uppercase }} </li>
+            </ul>
+        </ng-container>
+
+        <!-- SHOW WHEN THE SCREEN < 959px -->
+        <ng-template #btnMenu>
+            <p><button class="btn-sidevar" mat-button (click)="sidenav.toggle(); changeIcon()">
+                <mat-icon> {{ icon }} </mat-icon>
+            </button></p>
+        </ng-template>
+    </div>
 
 </nav>
 
-<mat-sidenav-container>
-    <mat-sidenav class="example-container" #sidenav (keydown.escape)="close()">
+<mat-sidenav-container *ngIf="!show">
+    <mat-sidenav class="example-container" #sidenav>
 
         <li (click)="sidenav.close(); changeIcon()" class="sidenav__list--item" [routerLink]="item.route" *ngFor="let item of mainMenu"> {{ item.link | uppercase }} </li>
 

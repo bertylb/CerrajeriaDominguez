@@ -1,6 +1,6 @@
 
 .nav{
-    padding: 1rem 4rem;
+    padding: 1.4rem 3rem;
     width: 100vw;
     background: var(--primaryColor);
     color: var(--paragraphColor);
@@ -59,20 +59,32 @@ mat-icon {
     align-items: center;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:959px) {
     .nav {
-        padding: 1rem 4rem;
+        padding: 1rem 3rem;
     }
-    .nav__menu--item{
-        display: none;
+    .sidenav__list--item:first-child {
+        margin-top: 150px;
+    }
+    .sidenav__list--item {
+        height: 3rem;
+        margin: 5rem;
+    }
+}
+@media screen and (max-width:575px){
+    .sidenav__list--item {
+        height: 5rem;
     }
 }
 @media screen and (max-height:500px) and (orientation: landscape) {
     .nav {
         padding: .5rem 4rem;
     }
+    .sidenav__list--item:first-child {
+        margin-top: 120px;
+    }
     .sidenav__list--item {
-        height: 0px;
-        margin-top: 90px;
+        height: 2.1rem;
+        margin: 3rem;
     }
 }
