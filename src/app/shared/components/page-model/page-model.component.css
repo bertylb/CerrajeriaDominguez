@@ -5,7 +5,9 @@
     height: 100vh;
     padding: 40px;
     z-index: 50;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .main__title {
     top: 130px;
@@ -79,21 +81,22 @@
 .img:hover {
     border: 5px rgba(0, 0, 0, 0.419);
 }
-@media screen and (max-width:575px) {
+@media screen and (max-width:980px) {
+    .main__title {
+        position: relative;
+        top: 0;
+    }
     .main__paragraph {
-        padding: 2rem;
+        top: 85px;
     }
 }
-@media screen and (max-height:500px) and (orientation: landscape) {
+@media screen and (max-width:745px){
     .main {
-        padding: 25px 10px;
-    }
-    .main__title{
-        top: 85px;
-        margin-top: 0;
+        padding: 0 5px;
     }
     .main__paragraph {
-        margin-top: 20px;
-        top: 150px;
+        position: relative;
+        top: 0;
+        font-size: 1.7rem;
     }
 }

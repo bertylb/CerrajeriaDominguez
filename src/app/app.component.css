@@ -3,7 +3,7 @@
     margin-top: 91px;
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background: linear-gradient(to bottom right,rgba(255, 247, 0, 0.261),
                                                 rgba(0, 0, 0, 0.529)),
                                                 url(../assets/img/body-bg1.jpg) no-repeat;
@@ -41,7 +41,7 @@
         background-position: center;
     }
 }
-@media screen and (max-height:500px) and (orientation: landscape) {
+@media screen and (max-height:375px) and (orientation: landscape) {
     .nav-bar__extension {
         margin-top: 75px;
     }

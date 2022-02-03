@@ -1,11 +1,36 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ProductService } from '@shared/services/products-services/product.service';
 import { ServiceService } from '@shared/services/services-service/service.service';
+import { trigger, style, transition, animate, state } from '@angular/animations'
 
 @Component({
   selector: 'app-home-pages',
   templateUrl: './home-pages.component.html',
-  styleUrls: ['./home-pages.component.css']
+  styleUrls: ['./home-pages.component.css'],
+  animations: [
+    trigger('mainTitle', [
+      state('void', style({
+        transform: 'translateY(-100px)',
+        opacity: 0
+      })),
+      transition(':enter', [
+        animate('300ms', style({
+          transform: 'translateY(0)',
+          opacity: 1
+        }))
+      ])
+    ]),
+    trigger('mainParagraph', [
+      state('void', style({
+        opacity: 0
+      })),
+      transition(':enter', [
+        animate('600ms', style({
+          opacity: 1
+        }))
+      ])
+    ])
+  ]
 })
 export class HomePagesComponent implements OnInit {
 
@@ -23,7 +48,6 @@ export class HomePagesComponent implements OnInit {
    }
 
   ngOnInit(): void {
-
     setTimeout(() => {
       let srcMap = this.googleMap.nativeElement.src;
       if(srcMap!=this.linkAddress){

@@ -5,6 +5,7 @@
     </div>
 
     <div class="nav__menu">
+        <!-- SHOW TRUE WHEN SCREEN > 960px -->
         <ng-container *ngIf="show; else btnMenu">
             <ul class="nav__menu--body">
                 <li class="nav__menu--item" [routerLink]="item.route" *ngFor="let item of mainMenu"> {{ item.link | uppercase }} </li>

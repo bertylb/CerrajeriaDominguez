@@ -1,11 +1,37 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { trigger, style, state, animate, transition } from '@angular/animations';
+
 import { ProductService } from '@shared/services/products-services/product.service';
 import { ServiceService } from '@shared/services/services-service/service.service';
 
 @Component({
   selector: 'app-page-model',
   templateUrl: './page-model.component.html',
-  styleUrls: ['./page-model.component.css']
+  styleUrls: ['./page-model.component.css'],
+  animations: [
+    trigger('mainTitle', [
+      state('void', style({
+        transform: 'translateY(-100px)',
+        opacity: 0
+      })),
+      transition(':enter', [
+        animate('300ms', style({
+          transform: 'translateY(0)',
+          opacity: 1
+        }))
+      ])
+    ]),
+    trigger('mainParagraph', [
+      state('void', style({
+        opacity: 0
+      })),
+      transition(':enter', [
+        animate('600ms', style({
+          opacity: 1
+        }))
+      ])
+    ])
+  ]
 })
 export class PageModelComponent implements OnInit {
 
