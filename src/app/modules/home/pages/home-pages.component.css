@@ -168,6 +168,10 @@ section:last-of-type {
     }
 }
 @media screen and (max-width:745px){
+    .main {
+        height: 80vh;
+        padding: 0 20px;
+    }
     .main__title, .main__title--span {
         line-height: 60px;
         font-size: 2rem;
@@ -178,7 +182,6 @@ section:last-of-type {
     .main__paragraph {
         position: relative;
         top: 10px;
-        font-size: 1.7rem;
     }
     .box {
         max-height: 2200px;
@@ -238,8 +241,38 @@ section:last-of-type {
         width: 90%;
     }
 }
+@media screen and (max-width:440px) {
+    .main {
+        height: 110vh;
+        padding: 0;
+    }
+    .main__paragraph {
+        font-size: 1.4rem;
+    }
+    .box__description--title {
+        font-size: 2.5rem;
+    }
+    .box__description--paragraph {
+        font-size: 1.4rem;
+    }
+}
 @media screen and (max-height:930px) and (max-width: 980px) {
     .main__paragraph {
         top: 0;
+    }
+}
+@media screen and (max-height:450px) and (orientation: landscape) {
+    .box__description--title {
+        font-size: 3.5rem;
+    }
+    .title__productos,
+    .title__ubicacion {
+        height: 90px;
+    }
+    .box__description--paragraph {
+        padding: 3% .4rem;
+    }
+    .box__button {
+        top: 350px;
     }
 }

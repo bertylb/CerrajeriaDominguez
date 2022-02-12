@@ -41,8 +41,8 @@
         background-position: center;
     }
 }
-@media screen and (max-height:375px) and (orientation: landscape) {
+@media screen and (max-height:450px) and (orientation: landscape) {
     .nav-bar__extension {
-        margin-top: 75px;
+        margin-top: 64px;
     }
 }

@@ -76,9 +76,19 @@ mat-icon {
         height: 5rem;
     }
 }
-/* @media screen and (max-height:200px) and (orientation: landscape) {
+@media screen and (max-width:440px) {
+    .sidenav__list--item:first-child {
+        margin-top: 105px;
+    }
+    .sidenav__list--item {
+        margin: 1.5rem;
+        height: 4.2rem;
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-height:450px) and (orientation: landscape) {
     .nav {
-        padding: 1rem 4rem;
+        padding: .5rem 3rem;
     }
     .sidenav__list--item:first-child {
         margin-top: 120px;
@@ -87,4 +97,7 @@ mat-icon {
         height: 2.1rem;
         margin: 3rem;
     }
-} */
+    mat-icon {
+        font-size: 2.5rem;
+    }
+}

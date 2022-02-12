@@ -49,7 +49,6 @@
             <p class="box__description--paragraph">Nos encontramos en: <br> Belgrano 2243 Coronda - Santa Fe
             </p>
         </header>
-        <!--  -->
         <ng-container *ngIf="showMap; else mapLoadError;">
             <iframe
                 #googleMap
@@ -61,7 +60,7 @@
         </ng-container>
             <!-- <button type="button" class="box__button sticky">Ver mas</button> -->
         <ng-template #mapLoadError>
-            <h3 class="mapLoadError">Error al cargar la ubicación!</h3>
+            <h3 class="mapLoadError">Error al cargar la ubicación.</h3>
         </ng-template>
     </article>
 </section>
@@ -75,7 +74,7 @@
             </p>
         </header>
         <div class="box__redes sticky">
-            <a href="">
+            <a href="https://www.facebook.com/cerrajeria.dominguez" target="_blank">
                 <i><img class="box__redes--icon" src="assets/img/icons/facebook.svg"alt="facebook-icono" title="facebook"></i>
             </a>
             <a href="">
